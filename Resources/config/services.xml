@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="socle_intl_date_time_format.handler.locale_handler.class">Socle\Bundle\IntlDateTimeFormatBundle\Handler\LocaleHandler</parameter>
+        <parameter key="socle_intl_date_time_format.formatter.intl_date_time_formatter.class">Socle\Bundle\IntlDateTimeFormatBundle\Formatter\IntlDateTimeFormatter</parameter>
+        <parameter key="socle_intl_date_time_format.twig.date_time_format_extension.class">Socle\Bundle\IntlDateTimeFormatBundle\Twig\DateTimeFormatExtension</parameter>
+    </parameters>
+
+    <services>
+        <service id="socle_intl_date_time_format.handler.locale_handler" class="%socle_intl_date_time_format.handler.locale_handler.class%">
+            <argument type="service" id="service_container" />
+        </service>
+        <service id="socle_intl_date_time_format.formatter.intl_date_time_formatter" class="%socle_intl_date_time_format.formatter.intl_date_time_formatter.class%">
+            <argument type="service" id="socle_intl_date_time_format.handler.locale_handler" />
+            <argument>%socle_intl_date_time_format.localized_formats%</argument>
+        </service>
+        <service id="socle_intl_date_time_format.twig.date_time_format_extension" class="%socle_intl_date_time_format.twig.date_time_format_extension.class%">
+            <argument type="service" id="socle_intl_date_time_format.formatter.intl_date_time_formatter" />
+            <tag name="twig.extension" />
+        </service>
+    </services>
+</container>
