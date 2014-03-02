@@ -1,0 +1,24 @@
+{
+    "name": "socle/intl-datetime-format-bundle",
+    "type": "symfony-bundle",
+    "description": "This bundle provides localized date, time, datetime display with the ability to overload formats patterns.",
+    "keywords": ["Intl", "DateTime", "Format", "Twig"],
+    "license": "new BSD",
+    "authors": [
+        {
+            "name": "Soliman Cheyssial",
+            "email": "soliman.cheyssial@sialis.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.4",
+        "symfony/framework-bundle": "~2.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Socle\\Bundle\\IntlDateTimeFormatBundle": ""
+        }
+    },
+    "target-dir": "Socle/Bundle/IntlDateTimeFormatBundle"
+}
