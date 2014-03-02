@@ -3,7 +3,7 @@
 namespace Socle\Bundle\IntlDateTimeFormatBundle\Handler;
 
 /**
- * Interface LocaleHandlerInterface
+ * Locale handler class definition
  * 
  * @author Soliman Cheyssial <scheyssial@sqli.com>
  */

@@ -8,6 +8,8 @@ use Socle\Bundle\IntlDateTimeFormatBundle\Formatter\IntlDateTimeFormatterInterfa
  * Get locale date format in twig
  * 
  * @author Soliman Cheyssial <scheyssial@sqli.com>
+ * @license http://opensource.org/licenses/BSD-3-Clause new BSD
+ * @copyright 2014 Soliman CHEYSSIAL
  */
 class DateTimeFormatExtension extends \Twig_Extension
 {

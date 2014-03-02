@@ -5,9 +5,11 @@ namespace Socle\Bundle\IntlDateTimeFormatBundle\Handler;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LocaleHandler
+ * Locale handler class to get current locale
  * 
  * @author Soliman Cheyssial <scheyssial@sqli.com>
+ * @license http://opensource.org/licenses/BSD-3-Clause new BSD
+ * @copyright 2014 Soliman CHEYSSIAL
  */
 class LocaleHandler implements LocaleHandlerInterface
 {

@@ -8,9 +8,11 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
 /**
- * This is the class that loads and manages your bundle configuration
+ * Bundle registration
  *
- * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
+ * @author Soliman Cheyssial <scheyssial@sqli.com>
+ * @license http://opensource.org/licenses/BSD-3-Clause new BSD
+ * @copyright 2014 Soliman CHEYSSIAL
  */
 class SocleIntlDateTimeFormatExtension extends Extension
 {

@@ -5,9 +5,11 @@ namespace Socle\Bundle\IntlDateTimeFormatBundle\Formatter;
 use Socle\Bundle\IntlDateTimeFormatBundle\Handler\LocaleHandlerInterface;
 
 /**
- * Class IntlDateTimeFormatter
+ * Formatter class to get a formatted date or format according to locale
  * 
  * @author Soliman Cheyssial <scheyssial@sqli.com>
+ * @license http://opensource.org/licenses/BSD-3-Clause new BSD
+ * @copyright 2014 Soliman CHEYSSIAL
  */
 class IntlDateTimeFormatter implements IntlDateTimeFormatterInterface
 {

@@ -3,9 +3,11 @@
 namespace Socle\Bundle\IntlDateTimeFormatBundle\Formatter;
 
 /**
- * Class IntlDateTimeFormatterInterface
+ * Formatter class definition
  * 
  * @author Soliman Cheyssial <scheyssial@sqli.com>
+ * @license http://opensource.org/licenses/BSD-3-Clause new BSD
+ * @copyright 2014 Soliman CHEYSSIAL
  */
 interface IntlDateTimeFormatterInterface
 {
